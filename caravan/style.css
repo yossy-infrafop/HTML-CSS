@@ -10,11 +10,28 @@ a {
     text-decoration: none; /*リンクの下線をなくす*/
 }
 
+header, nav, h2, .main-visual, footer {
+    /* 左から優先して適用. 日本語やスペースが入るものは""で囲う */
+    font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
     width: 90%; /* 横幅90% */
     padding: 15px 0;
     margin: 0 auto;
     text-align: center;
+    position: relative; /* #socialの基準位置を相対位置へ変更 */
+}
+
+.social i {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social {
+    position: absolute;
+    top: 22px;
+    right: 22px;
 }
 
 header .heading { 
