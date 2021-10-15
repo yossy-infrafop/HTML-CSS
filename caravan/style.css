@@ -238,3 +238,85 @@ footer {
 .footer-text {
     color: #fff;
 }
+
+/********** レスポンシブ対応 **********/
+@media screen and (max-width:425px) {
+    header {
+        width: 100%;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        display: list-item;
+        margin: 0 0 10px 0;
+    }
+
+    .main-visual-content {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    .blog {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .blog-box {
+        margin: 0 10px 0;
+    }
+
+    .blog-image {
+        width: 200px; 
+    }
+
+    .blog-text {
+        padding: 10px 0 0 30px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .common-heading {
+        margin-top: 40px;
+    }
+
+    .sidebar-contents {
+        padding: 50px 0 10px 0;
+    }
+
+    .popular-text,
+    .categories-text {
+        margin-left: 3%;
+    }
+
+    .popular-text:last-child,
+    .categories-text:last-child {
+        margin-left: 3%;
+    }
+
+    .instagram-box {
+        width: 45%;
+        padding-top: 45%;
+    }
+
+    .instagram-box:nth-child(odd) {
+        margin-right: 4%;
+        margin-left: 3%;
+    }
+
+    .instagram-box:nth-child(even) {
+        margin-right: 3%;
+    }
+}
